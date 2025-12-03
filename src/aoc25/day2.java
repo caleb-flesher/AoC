@@ -29,10 +29,9 @@ public class day2 {
                     Matcher match = regex.matcher(String.valueOf(i));
                     // Check globally
                     while (match.find()) {
-                        if (match.group() != "") { result = result + i; }
+                        if (!match.group().isEmpty()) { result += i; }
                     }
-                }
-               
+                }   
             }
 
             // Print result, close the scanner
